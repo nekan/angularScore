@@ -1,0 +1,15 @@
+ul
+	li(ng-repeat="phone in phones") {{phone.name}}
+
+br
+
+input(type="text", ng-model="term", placeholder="search term",ng-click="search()")
+
+hr
+div(class="container")
+	div(class="game", ng-repeat="item in items")
+		div(class="local score_cell") {{ item.local }}
+		div(class="result score_cell") {{ item.result }}
+		div(class="green button") {{ item.visitant }}
+	
+	
